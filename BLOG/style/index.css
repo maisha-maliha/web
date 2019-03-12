@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+*:hover {
+    transition: .3s;
+}
+
+/* 
+font-family: 'Poppins',
+sans-serif;
+font-family: 'Playfair Display',
+serif;
+font-family: 'Noto Serif',
+serif;
+
+*/
+
+/* shop */
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.shop-post .img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.shop-post .img a img {
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.shop-post-s .img-s{
+width: 100%;
+overflow: hidden;
+height: 200px;
+}
+
+.shop-post-s .img-s a img{
+height: 200px;
+ width: 100%;
+ object-fit: cover;
+ transition: 1s;
+}
+:root {
+    --color: rgb(51, 51, 51);
+}
+
+.contain {
+    margin: 30px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+address {
+    margin-top: 15px;
+    color: grey;
+    font-family: 'Noto Serif',
+        serif;
+        font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+h3,
+h3 a {
+    margin: 20px 0;
+    font-family: 'Playfair Display',
+        serif;
+}
+
+a.tech,
+a.trav,
+a.lifes,
+a.goss,
+a.fea,
+h1,
+li a {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+
+
+/* HEADER */
+header {
+    margin: 20px auto 100px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 20px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    padding: 20px 20px 20px 0;
+}
+
+/* li a {
+    padding: 20px 20px 20px 0;
+} */
+
+li a:hover {
+    font-weight: bold;
+}
+
+
+
+/* FEATURED POST AND GOSSIP POST */
+h2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+.featured,
+.gossip {
+    margin: 20px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 35px;
+}
+
+.fe-post,
+.gossip-post {
+    height: auto;
+    overflow: hidden;
+}
+
+.fe-post .img,
+.gossip-post .img {
+    height: 140px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fe-post .img img,
+.gossip-post .img img {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.fe-post .title,
+.gossip-post .title {
+    height: auto;
+    margin-top: 20px;
+}
+
+.fe-post .title h2,
+.gossip-post .title h2 {
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--color);
+}
+
+.fe-post .title h2 a:hover {
+    color: rgb(218, 47, 47);
+}
+
+.gossip-post .title h2 a:hover {
+    color: rgb(214, 179, 19);
+}
+
+a.fea {
+    padding: 5px 10px;
+    background: rgb(255, 58, 58);
+    border-radius: 10px;
+    color: white;
+}
+
+a.fea:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(255, 58, 58);
+    /* border: solid 2px rgb(255, 58, 58); */
+}
+
+a.goss {
+    padding: 5px 10px;
+    background: rgb(245, 203, 15);
+    border-radius: 10px;
+    color: white;
+}
+
+a.goss:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(245, 203, 15);
+    /* border: solid 2px rgb(245, 203, 15); */
+}
+
+
+/* TECHNOLOGY POST */
+
+
+.technology {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.technology-post .img {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.technology-post .img img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.technology-post .title {
+    position: relative;
+    bottom: 150px;
+    left: 10%;
+    min-height: 200px;
+    overflow: hidden;
+    width: 80%;
+    padding: 10px 25px;
+    background: white;
+    border-bottom: solid 1px rgb(177, 177, 177);
+}
+
+.technology-post .title h2 {
+    color: var(--color);
+    margin-top: 15px;
+}
+
+.technology-post .title h2 a:hover {
+    color: rgb(109, 189, 255);
+}
+
+.technology .title address {
+    margin-top: 35px;
+}
+
+a.tech {
+    position: relative;
+    top: 20px;
+    padding: 5px 10px;
+    background: rgb(109, 189, 255);
+    border-radius: 10px;
+    color: white;
+}
+
+a.tech:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(109, 189, 255);
+    /* border: solid 2px rgb(109, 189, 255); */
+}
+
+
+
+/* ARTICLE STYLE */
+
+article {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px 40px;
+}
+
+
+
+/* LIFESTYLE POST */
+
+.lifestyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+    margin-bottom: 50px;
+}
+
+.life-post {
+    height: auto;
+}
+
+.life-post .img {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.life-post .img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.life-post .title {
+    margin-top: 15px;
+    height: auto;
+    padding: 5px 0;
+}
+
+.life-post .title h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--color);
+}
+
+.life-post .title h2 a:hover {
+    color: rgb(235, 49, 142);
+}
+
+a.lifes {
+    padding: 5px 10px;
+    background: rgb(235, 49, 142);
+    color: white;
+    border-radius: 10px;
+}
+
+a.lifes:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(235, 49, 142);
+    /* border: solid 2px rgb(235, 49, 142); */
+}
+
+
+
+/* CODE POST */
+aside {
+    min-width: 250px;
+}
+
+.code {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5px 10px;
+    background: var(--color);
+    min-width: 250px;
+}
+
+.code h2 {
+    display: inline-block;
+    font-size: 18px;
+    border-bottom: solid 1px black;
+    padding: 20px 10px;
+    margin: 10px 0;
+}
+
+.code h2:hover {
+    border-bottom: solid 1px white;
+}
+
+.code a {
+    color: white;
+    font-weight: 500;
+}
+
+.code a:hover {
+    font-weight: bold;
+}
+
+
+
+/* TRAVEL POST */
+
+.travel-post {
+    margin-bottom: 50px;
+    height: 320px;
+    width: 100%;
+}
+
+.travel-post .img {
+    float: left;
+    height: 320px;
+    width: 45%;
+    overflow: hidden;
+}
+
+.travel-post .img img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.travel-post .title {
+    float: right;
+    height: auto;
+    width: 55%;
+    padding: 5px 10px;
+}
+
+.travel-post .title h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    color: var(--color);
+}
+
+.travel-post .title h2 a:hover {
+    color: rgb(64, 207, 35);
+}
+
+a.trav {
+    padding: 5px 10px;
+    background: rgb(64, 207, 35);
+    color: white;
+    border-radius: 10px;
+}
+
+a.trav:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(64, 207, 35);
+}
+
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background: var(--color);
+    color: white;
+    height: 100px;
+    padding: 30px 0; 
+}
+
+
+
+
+
+/* ALL QUERIES */
+
+@media(max-width:1000px) {
+
+    .featured,
+    .gossip {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .lifestyle {
+        grid-row: 2/3;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "h3"
+            "featured"
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .featured {
+        grid-area: featured;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media(max-width:730px) {
+
+    article,
+    .featured,
+    .gossip,
+    .lifestyle,
+    .technology, .shop, .code {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .lifestyle .img,
+    .lifestyle .img img,
+    .gossip .img,
+    .gossip .img img {
+        height: 300px;
+    }
+
+    .featured .title h2,
+    .lifestyle .title h2,
+    .travel .title h2,
+    .gossip .title h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .technology .title {
+        width: 90%;
+        left: 5%;
+    }
+
+    .travel-post {
+        margin-bottom: 30px;
+        height: 290px;
+    }
+
+    .travel-post .img,
+    .travel-post .img img {
+        height: 290px;
+    }
+}

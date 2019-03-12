@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+
+/* 
+
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Merriweather',
+serif;
+font-family: 'Playfair Display',
+serif;
+font-family: 'Poppins',
+sans-serif;
+
+*/
+
+
+
+
+/* *:hover {
+    transition: .3s;
+} */
+:root {
+    --color: rgb(51, 51, 51);
+}
+address {
+    font-family: 'Merriweather',
+    serif;
+    margin: 10 0;
+    color: grey;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+header {
+    margin: 20px auto 100px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    padding: 20px 20px 20px 0;
+}
+li a:hover {
+    font-weight: bold;
+}
+.contain {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+
+
+
+
+
+.lifestyle a{
+    color: rgb(235, 49, 142);
+    text-decoration: underline;
+    text-decoration-color: rgb(235, 49, 142);
+}
+.gossip a{
+    color: rgb(226, 185, 0);
+    text-decoration: underline;
+    text-decoration-color: rgb(226, 185, 0);
+}
+.technology a{
+    color: rgb(109, 189, 255);
+    text-decoration: underline;
+    text-decoration-color: rgb(109, 189, 255);
+}
+.code a{
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+
+
+
+
+
+a.fea {
+    padding: 5px 10px;
+    background: rgb(255, 58, 58);
+    border-radius: 10px;
+    color: white;
+}
+
+a.fea:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(255, 58, 58);
+    /* border: solid 2px rgb(255, 58, 58); */
+}
+
+a.goss {
+    padding: 5px 10px;
+    background: rgb(245, 203, 15);
+    border-radius: 10px;
+    color: white;
+}
+
+a.goss:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(245, 203, 15);
+    /* border: solid 2px rgb(245, 203, 15); */
+}
+
+a.tech {
+    position: relative;
+    top: 20px;
+    padding: 5px 10px;
+    background: rgb(109, 189, 255);
+    border-radius: 10px;
+    color: white;
+}
+
+a.tech:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(109, 189, 255);
+    /* border: solid 2px rgb(109, 189, 255); */
+}
+
+a.code{
+    padding: 5px 10px;
+    background: var(--color);
+    color: white;
+    border-radius: 10px;
+}
+
+a.code:hover{
+    background: white;
+    font-weight: bold;
+    color: var(--color);
+}
+
+a.lifes {
+    padding: 5px 10px;
+    background: rgb(235, 49, 142);
+    color: white;
+    border-radius: 10px;
+}
+
+a.lifes:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(235, 49, 142);
+    /* border: solid 2px rgb(235, 49, 142); */
+}
+
+a.trav {
+    padding: 5px 10px;
+    background: rgb(64, 207, 35);
+    color: white;
+    border-radius: 10px;
+}
+
+a.trav:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(64, 207, 35);
+}
+.date{
+    display: inline-block;
+    color: gray;
+    font-weight: bold;
+}
+
+
+h1{
+    font-family: 'Merriweather',
+    serif;
+    font-size: 40px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px 0;
+}
+h3{
+    margin: 20px 0;
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.container{
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    grid-gap: 20px;
+}
+.content{
+    max-width:720px;
+    margin: 0 auto;
+}
+.content ul{
+    line-height: 33px;
+    font-size: 18px;
+    margin-left: 15%; 
+}
+ul li{
+    font-family: 'Merriweather',
+    serif;
+}
+p{
+    font-family: 'Merriweather',
+    serif;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 30px;
+    text-indent: 30px;
+    word-spacing: 5px;
+}
+blockquote{
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 25px;
+    border-left: solid 4px rgba(128, 128, 128, 0.349);
+}
+.img{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+.img img{
+    width: 100%;
+    object-fit: cover;
+}
+footer {
+    text-align: center;
+    background: var(--color);
+    color: white;
+    height: 100px;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+aside{
+    margin: 0 auto;
+}
+
+
+
+@media(max-width:1000px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

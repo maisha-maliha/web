@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+*:hover {
+    transition: .3s;
+}
+
+:root {
+    --color: rgb(51, 51, 51);
+}
+
+.contain {
+    margin: 30px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+address {
+    margin-top: 15px;
+    color: grey;
+    font-family: 'Noto Serif',
+        serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+h3,
+h3 a {
+    font-family: 'Playfair Display',
+        serif;
+}
+
+header {
+    margin: 20px auto 100px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 20px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    padding: 20px 20px 20px 0;
+}
+
+/* li a {
+    padding: 20px 20px 20px 0;
+} */
+
+li a:hover {
+    font-weight: bold;
+}
+
+article {
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px 40px;
+}
+
+.technology {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+    margin-bottom: 50px;
+}
+
+.technology-post {
+    height: auto;
+}
+
+.technology-post .img {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.technology-post .img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.technology-post .title {
+    margin-top: 15px;
+    height: auto;
+    padding: 5px 0;
+}
+
+.technology-post .title h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--color);
+}
+
+.technology-post .title h2 a:hover {
+    color: rgb(109, 189, 255);
+}
+
+a.trav {
+    padding: 5px 10px;
+    background: rgb(109, 189, 255);
+    color: white;
+    border-radius: 10px;
+}
+
+a.trav:hover {
+    background: white;
+    font-weight: bold;
+    color: rgb(109, 189, 255);
+    /* border: solid 2px rgb(109, 189, 255); */
+}
+footer {
+    text-align: center;
+    background: var(--color);
+    color: white;
+    height: 100px;
+    padding: 30px 0;
+}
+
+
+
+/* CODE POST */
+aside {
+    min-width: 250px;
+}
+
+aside {
+    padding: 5px 0;
+    min-width: 250px;
+}
+
+aside h2 {
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+aside h2:hover {
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+aside a:hover {
+    font-weight: bold;
+}
+
+@media(max-width:1000px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .technology {
+        grid-row: 2/3;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media(max-width:730px) {
+    .technology {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .technology .img,
+    .technology .img img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

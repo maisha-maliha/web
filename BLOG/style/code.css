@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+*:hover {
+    transition: .3s;
+}
+
+:root {
+    --color: rgb(51, 51, 51);
+}
+
+.contain {
+    margin: 30px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+address {
+    margin-top: 15px;
+    color: grey;
+    font-family: 'Noto Serif',
+        serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+h3,
+h3 a {
+    font-family: 'Playfair Display',
+        serif;
+}
+
+header {
+    margin: 20px auto 100px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 20px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    padding: 20px 20px 20px 0;
+}
+
+/* li a {
+    padding: 20px 20px 20px 0;
+} */
+
+li a:hover {
+    font-weight: bold;
+}
+
+article {
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px 40px;
+}
+
+.Code {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+    margin-bottom: 50px;
+}
+
+.Code-post {
+    height: auto;
+}
+
+.Code-post .img {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Code-post .img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.Code-post .title {
+    margin-top: 15px;
+    height: auto;
+    padding: 5px 0;
+}
+
+.Code-post .title h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--color);
+}
+
+.Code-post .title h2 a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+a.code {
+    padding: 5px 10px;
+    background: var(--color);
+    color: white;
+    border-radius: 10px;
+}
+
+a.code:hover {
+    background: white;
+    font-weight: bold;
+    color: var(--color);
+    /* border: solid 2px rgb(214, 179, 19); */
+}
+
+
+
+/* CODE POST */
+aside {
+    min-width: 250px;
+}
+
+aside {
+    padding: 5px 0;
+    min-width: 250px;
+}
+
+aside h2 {
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+aside h2:hover {
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+aside a:hover {
+    font-weight: bold;
+}
+
+@media(max-width:1000px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Code {
+        grid-row: 2/3;
+        margin-bottom: 20px;
+    }
+}
+footer {
+    text-align: center;
+    background: var(--color);
+    color: white;
+    height: 100px;
+    padding: 30px 0;
+}
+
+
+@media(max-width:730px) {
+    .Code {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Code .img,
+    .Code .img img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
