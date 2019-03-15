@@ -223,7 +223,7 @@ ul li{
 p{
     font-family: 'Merriweather',
     serif;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 0;
     line-height: 30px;
     text-indent: 30px;
@@ -232,7 +232,7 @@ p{
 blockquote{
     margin: 20px 0;
     padding: 10px;
-    font-size: 25px;
+    font-size: 23px;
     border-left: solid 4px rgba(128, 128, 128, 0.349);
 }
 .img{
