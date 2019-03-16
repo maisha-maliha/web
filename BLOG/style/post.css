@@ -211,7 +211,7 @@ h4{
     max-width:720px;
     margin: 0 auto;
 }
-.content ul{
+.content ul, .content ol{
     line-height: 33px;
     font-size: 18px;
     margin-left: 15%; 
